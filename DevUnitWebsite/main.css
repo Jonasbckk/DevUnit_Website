@@ -1,0 +1,82 @@
+/* Allgemeine Stile, die für alle Bildschirmgrößen gelten */
+body {
+    background-color: #202122ef;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    text-align: left;
+    background-color: #202122;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #202122;
+    transition: background-color 0.3s ease; /* Smoothes Hovern */
+}
+
+.überschrift {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.highlight {
+    background-color: #333;
+    padding: 2px;
+}
+
+.logo-box {
+    background-color: #202122;
+    padding: 9px;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #202122;
+    transition: background-color 0.3s ease; /* Smoothes Hovern */
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.logobox2 {
+    background-color: #202122;
+    padding: 27px;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #202122;
+    transition: background-color 0.3s ease; /* Smoothes Hovern */
+}
+
+.logobox {
+    max-width: 113px;
+}
+
+/* Hover-Effekte */
+.logo-box:hover, .logobox2:hover, .content:hover {
+    background-color: #333;
+}
+
+/* Media Query für schmale Bildschirme */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .logo-box,
+    .logobox2 {
+        margin-top: 10px;
+    }
+}
